@@ -27,10 +27,7 @@ def songsTensors(genres_directory, genres):
     for idx, g in enumerate(genres):
         path = genres_directory + g + '/'
         print(path)
-        songs_paths = []
-        for (dirpath, dirname, filenames) in os.walk(path):
-            for f in filenames:
-                songs_paths.append(os.path.join(path, f))
+        songs_paths = [os.path.join(path, filename) for filename in os.listdir(path)]
         for s_idx, s in enumerate(songs_paths):
             T = [j for j in range(26)]
             x, sr = librosa.load(s)

@@ -1,0 +1,13 @@
+input_path: 'D:/........../data/raw_data/genres/'
+preprocessed_data_path: 'D:/.........../data/preprocessed_data/genres_array.npy'
+output_path_1: 'D:/........./output/model1/'
+output_path_2: 'D:/........../output/model2/'
+model: 'fc2'      #models: fc1 - model_cmg_fc1; fc2 = model_cmg_fc2
+train_dataset_percent: .8     #val_dataset_percent = 1.- train_dataset_percent
+input_size: 26406
+num_classes: 10
+learning_rate: .0001
+batch_size: 128
+num_epochs: 500
+
+

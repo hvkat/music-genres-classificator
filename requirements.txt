@@ -2,3 +2,5 @@ librosa
 numpy
 pyyaml
 torch
+os
+myplotlib

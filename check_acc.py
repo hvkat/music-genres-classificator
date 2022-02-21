@@ -1,4 +1,4 @@
-#Function was based on Aladdin Persson https://youtu.be/Jy4wM2X21u0
+
 import torch
 
 def check_acc(loader, model, device):

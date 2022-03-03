@@ -1,0 +1,5 @@
+librosa 0.8.1
+numpy 1.20.3
+pyyaml 6.0
+torch 1.10.1+cu113
+matplotlib 3.5.1

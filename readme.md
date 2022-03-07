@@ -1,4 +1,4 @@
-# PyTorch Classifier
+# PyTorch Classifier)
 Simple classifier based on neural network consisting of fully connected layers.
 Project build in order to grow own skills, for personal, no commercial use. 
 
@@ -14,7 +14,15 @@ Data was preprocessed with use of [librosa](https://librosa.org/), a tool for au
 Specific audio features were retrieved.
 
 # Results
-No results posted.
+## Model 1 (Fully Connected with 4 layers)
+
+Training accuracy: 81.62. Validation accuracy: 35.5.
+![](https://github.com/hvkat/music-genres-classificator/blob/main/output/model1-curves.jpg?raw=true)
+
+## Model 2 (Fully Connected with 7 layers)
+
+Training accuracy: 98.88. Validation accuracy: 56.5.
+![](https://github.com/hvkat/music-genres-classificator/blob/main/output/model2-curves.jpg?raw=true)
 
 
 # References

@@ -11,8 +11,10 @@ with open(os.path.join(config_path,'config.yaml')) as c:
 model_type = configs["model"]
 if model_type == "fc1":
     output_path = os.path.join(configs["output_path_1"])
+    title = 'Learning curves - model: Fully Connected 1'
 elif model_type == "fc2":
     output_path = os.path.join(configs["output_path_2"])
+    title = 'Learning curves - model: Fully Connected 2'
 
 # Open files and get saved data
 with open(os.path.join(output_path,'avg_train_loss_per_epoch.txt')) as t:
@@ -33,5 +35,7 @@ print(f'Training accuracy: {train_acc}\nValidation accuracy: {val_acc}.')
 
 plt.plot(range(configs["num_epochs"]),trains,label='trains')
 plt.plot(range(configs["num_epochs"]),vals,label='vals')
+plt.title(title)
+plt.xlabel('Epochs'), plt.ylabel('Loss')
 plt.legend()
 plt.show()

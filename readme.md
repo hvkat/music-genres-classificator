@@ -1,4 +1,4 @@
-# PyTorch Classifier)
+# PyTorch Music Genres Classifier
 Simple classifier based on neural network consisting of fully connected layers.
 Project build in order to grow own skills, for personal, no commercial use. 
 
